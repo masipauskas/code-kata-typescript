@@ -5,6 +5,8 @@ tmp
 # JavaScript Build
 public/css
 public/js
+public/typescript/**/*.js
+public/typescript/**/*.js.map
 target/js
 
 # Grunt
