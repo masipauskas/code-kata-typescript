@@ -1,19 +1,30 @@
 {
-  "name": "angular-ts-seed",
-  "version": "0.1.0",
-  "description": "Type-Safe Angular with TypeScript and GruntTS",
+  "name": "code-kata-typescript",
+  "version": "1.0.0",
+  "description": "Code Kata's Project - Typescript",
+  "main": "app/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "tsc",
+    "test": "mocha --recursive"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeffmay/angular-ts-seed"
+    "url": "git+https://github.com/masipauskas/code-kata-typescript.git"
   },
+  "author": "Martynas Asipauskas (me@martynas.co.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masipauskas/code-kata-typescript/issues"
+  },
+  "homepage": "https://github.com/masipauskas/code-kata-typescript#readme",
   "dependencies": {
-    "grunt": "~0.4.4",
-    "grunt-bower": "~0.11.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-jasmine": "~0.6.3",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-ts": "~1.10.0"
+    "typescript": "^1.7.5"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
   }
 }
