@@ -9,5 +9,5 @@ To run the project do the following:
    * `git clone https://github.com/masipauskas/code-kata-typescript`
    * `npm install`
    * `tsd install`
-   * to run unit tests, for doing code kata's run: `npm test`
+   * to run unit tests: `npm test`
 
