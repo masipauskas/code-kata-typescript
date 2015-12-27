@@ -14,9 +14,15 @@ describe('Calculator', () => {
     });
 
     describe('#add', () => {
-        it('should add two numbers together', (done) => {
+        it('should add two numbers together and result in 5', (done) => {
             var result : number = subject.add(2, 3);
             expect(result).to.equals(5);
+            done();
+        });
+
+        it('should add two numbers together and result in 6', (done) => {
+            var result : number = subject.add(3, 3);
+            expect(result).to.equals(6);
             done();
         });
     });
