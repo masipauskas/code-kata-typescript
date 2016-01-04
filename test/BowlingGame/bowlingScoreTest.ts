@@ -7,7 +7,7 @@ var expect = chai.expect;
 import BowlingGame from '../../app/BowlingGame/bowlingScore'
 
 describe('Bowling game: #score', () => {
-    var game: BowlingGame;
+    var game: BowlingGame = new BowlingGame();
 
     beforeEach(() => {
         game = new BowlingGame();
