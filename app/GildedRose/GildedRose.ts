@@ -86,7 +86,7 @@ class Quality {
             return Quality._normalizeQuality(Quality.agedBrieQualityDecay(item.quality));
         } else if (item.name === "Sulfuras") {
             return Quality.sulfurasQualityDecay(item.quality)
-        } else if (item.name === "Backstage Pass") {
+        } else if (item.name === "Back Stage Pass") {
              return Quality._normalizeQuality(Quality.backstagePassQualityDecay(item));
          } else if (item.name === "Conjured") {
              return Quality._normalizeQuality(Quality.conjuredQualityDecay(item));
