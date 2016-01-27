@@ -28,7 +28,7 @@ module fizzBuzz {
         private fizz: Printer = new FizzPrinter();
         private buzz: Printer = new BuzzPrinter();
 
-        canHandle(n: Number): boolean { return this.fizz.canHandle(n) && this.buzz.canHandle(n); }
+        canHandle(n: number): boolean { return this.fizz.canHandle(n) && this.buzz.canHandle(n); }
         handle(n: number): string {
             return this.fizz.handle(n) + this.buzz.handle(n);
         }

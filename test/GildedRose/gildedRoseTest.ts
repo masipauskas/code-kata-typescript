@@ -62,14 +62,14 @@ describe('GildedRose', () => {
         it('should decrease Conjured items quality bellow twice the rate of the normal one when past sell in', (done) => {
             var item = new Item("Conjured", 15, 0);
             var result = GildedRose.updateQuality([ item ]);
-            expect(result).to.deep.equal([ new Item("Conjured", 11, 9) ]);
+            expect(result).to.deep.equal([ new Item("Conjured", 11, 0) ]);
             done();
         });
 
         it('should not impact Back Stage Pass items quality when sellIn above or equals to 10', (done) => {
-            var item = new Item("Back Stage Pass", 15, 10);
+            var item = new Item("Back Stage Pass", 15, 11);
             var result = GildedRose.updateQuality([ item ]);
-            expect(result).to.deep.equal([ new Item("Back Stage Pass", 15, 9) ]);
+            expect(result).to.deep.equal([ new Item("Back Stage Pass", 15, 10) ]);
             done();
         });
 
